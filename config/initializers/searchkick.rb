@@ -1,0 +1,1 @@
+ENV['OPENSEARCH_URL'] ||= "https://#{ENV.fetch('OPENSEARCH_HOST', nil)}" if ENV['OPENSEARCH_HOST']
