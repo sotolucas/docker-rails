@@ -28,10 +28,6 @@ module DockerRails
       Rails::VERSION::STRING
     end
 
-    def postgresql_version
-      ActiveRecord::Base.connection.select_value('SHOW server_version;')
-    end
-
     def opensearch_version
       Searchkick.server_version
     end
