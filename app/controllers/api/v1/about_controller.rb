@@ -16,7 +16,6 @@ module Api
           bundler:       Rails.application.bundler_version,
           rails:         Rails.application.rails_version,
           postgresql:    Rails.application.postgresql_version,
-          redis:         Rails.application.redis_version,
           opensearch:    Rails.application.opensearch_version
         }
       end
