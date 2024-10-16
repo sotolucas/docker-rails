@@ -28,10 +28,6 @@ module DockerRails
       Rails::VERSION::STRING
     end
 
-    def redis_version
-      str(Redis.new(url: ENV.fetch('REDIS_SIDEKIQ_URL', nil)).info['redis_version'])
-    end
-
     def postgresql_version
       ActiveRecord::Base.connection.select_value('SHOW server_version;')
     end
