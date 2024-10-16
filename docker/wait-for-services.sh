@@ -9,7 +9,7 @@ done
 echo "PostgreSQL is up and running"
 
 # Wait for OpenSearch
-until nc -z -v -w30 "$OPENSEARCH_HOST" 9200
+until nc -z -v -w30 "$OPENSEARCH_HOST" 443
 do
   echo 'Waiting for OpenSearch...'
   sleep 1
