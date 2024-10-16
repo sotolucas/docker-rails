@@ -27,9 +27,5 @@ module DockerRails
     def rails_version
       Rails::VERSION::STRING
     end
-
-    def opensearch_version
-      Searchkick.server_version
-    end
   end
 end
